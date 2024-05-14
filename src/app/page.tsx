@@ -1,8 +1,9 @@
 "use client";
-import Image from "next/image";
+// import Image from "next/image";
 import axios from "axios";
 import React, { useState, useEffect } from "react";
 import { Button } from "@nextui-org/react";
+import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
 
 export default function Home() {
   const [pkmnId, setPkmnId] = useState(0);
@@ -37,9 +38,10 @@ export default function Home() {
         src={`https://github.com/PokeAPI/sprites/blob/master/sprites/pokemon/other/official-artwork/${pkmnId}.png?raw=true`}
         width={300}
         height={300}
-        layout="fixed"
       />
-      <Button color="secondary">Secondary</Button>
+      <Button color="primary" onPress={() => generateRandomNumber()}>
+        Re-Roll
+      </Button>
     </main>
   );
 }
