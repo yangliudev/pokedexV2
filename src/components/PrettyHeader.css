@@ -1,0 +1,24 @@
+.pretty-header {
+  background: linear-gradient(to right, #add8e6, #b0e0e6);
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pretty-header h1 {
+  color: white;
+  font-family: "Arial", sans-serif;
+  font-size: 2.5em;
+  margin: 0;
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
