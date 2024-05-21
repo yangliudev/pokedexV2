@@ -3,6 +3,7 @@ import axios from "axios";
 import React, { useState, useEffect } from "react";
 import { Card, CardBody, CardFooter, Image, Button } from "@nextui-org/react";
 import PrettyHeader from "../components/PrettyHeader";
+import Toggle from "@/components/LightDarkToggle/Toggle";
 
 export default function Home() {
   const [pokemon, setPokemon] = useState({
@@ -70,6 +71,7 @@ export default function Home() {
         Re-Roll
       </Button>
       <PrettyHeader text={pokemon.name} />
+      <Toggle />
     </main>
   );
 }

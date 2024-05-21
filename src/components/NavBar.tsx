@@ -16,7 +16,7 @@ const NavBar = () => {
   return (
     <Navbar isBordered>
       <NavbarBrand>
-        <p className="font-bold text-inherit">Yang Dex</p>
+        <p className="font-bold text-inherit">YangDex</p>
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem isActive={pathname == "/" ? true : false}>
