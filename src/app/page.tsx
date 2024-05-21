@@ -3,7 +3,6 @@ import axios from "axios";
 import React, { useState, useEffect } from "react";
 import { Card, CardBody, CardFooter, Image, Button } from "@nextui-org/react";
 import PrettyHeader from "../components/PrettyHeader";
-import Toggle from "@/components/LightDarkToggle/Toggle";
 
 export default function Home() {
   const [pokemon, setPokemon] = useState({
@@ -40,20 +39,21 @@ export default function Home() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-20">
-      <Image
-        src="/assets/logo.png"
-        width={500}
-        height={500}
-        alt="Picture of the author"
-      />
-      <Image
-        alt="pokemon"
-        src={`https://github.com/PokeAPI/sprites/blob/master/sprites/pokemon/other/official-artwork/${pokemon.id}.png?raw=true`}
-        width={300}
-        height={300}
-      />
-      {/* <Card shadow="sm" isPressable onPress={() => console.log("item pressed")}>
+    <Card>
+      <main className="flex min-h-screen flex-col items-center justify-between p-20">
+        <Image
+          src="/assets/logo.png"
+          width={500}
+          height={500}
+          alt="Picture of the author"
+        />
+        <Image
+          alt="pokemon"
+          src={`https://github.com/PokeAPI/sprites/blob/master/sprites/pokemon/other/official-artwork/${pokemon.id}.png?raw=true`}
+          width={300}
+          height={300}
+        />
+        {/* <Card shadow="sm" isPressable onPress={() => console.log("item pressed")}>
         <CardBody className="overflow-visible p-0">
           <Image
             alt="pokemon"
@@ -66,12 +66,12 @@ export default function Home() {
           <p className="text-default-500">asdf</p>
         </CardFooter>
       </Card> */}
-      <h1>{pokemon.name}</h1>
-      <Button color="primary" onPress={() => generateRandomNumber()}>
-        Re-Roll
-      </Button>
-      <PrettyHeader text={pokemon.name} />
-      <Toggle />
-    </main>
+        <h1>{pokemon.name}</h1>
+        <Button color="primary" onPress={() => generateRandomNumber()}>
+          Re-Roll
+        </Button>
+        <PrettyHeader text={pokemon.name} />
+      </main>
+    </Card>
   );
 }

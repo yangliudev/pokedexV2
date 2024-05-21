@@ -10,6 +10,8 @@ import {
 
 import { usePathname } from "next/navigation";
 
+import Toggle from "./LightDarkToggle/Toggle";
+
 const NavBar = () => {
   const pathname = usePathname();
 
@@ -32,14 +34,15 @@ const NavBar = () => {
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
+        {/* <NavbarItem className="hidden lg:flex">
           <Link href="#">Login</Link>
         </NavbarItem>
         <NavbarItem>
           <Button as={Link} color="primary" href="#" variant="flat">
             Sign Up
           </Button>
-        </NavbarItem>
+        </NavbarItem> */}
+        <Toggle />
       </NavbarContent>
     </Navbar>
   );
