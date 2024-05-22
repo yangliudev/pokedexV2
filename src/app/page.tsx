@@ -70,7 +70,7 @@ export default function Home() {
         <Button color="primary" onPress={() => generateRandomNumber()}>
           Re-Roll
         </Button>
-        <PrettyHeader text={pokemon.name} />
+        {/* <PrettyHeader text={pokemon.name} /> */}
       </main>
     </div>
   );

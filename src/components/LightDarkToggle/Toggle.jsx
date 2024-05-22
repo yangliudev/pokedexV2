@@ -32,7 +32,7 @@ export default function Toggle() {
       }
       onChange={handleThemeToggle}
     >
-      {theme === "dark" ? "Dark mode" : "Light mode"}
+      {/* {theme === "dark" ? "Dark Mode" : "Light Mode"} */}
     </Switch>
   );
 }
