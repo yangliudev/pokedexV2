@@ -39,7 +39,7 @@ export default function Home() {
   };
 
   return (
-    <div className="dark dark:bg-black dark:text-white bg-white text-black">
+    <div>
       <main className="flex min-h-screen flex-col items-center justify-between p-20">
         <Image
           src="/assets/logo.png"
