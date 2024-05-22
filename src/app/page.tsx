@@ -39,7 +39,7 @@ export default function Home() {
   };
 
   return (
-    <Card>
+    <div className="dark dark:bg-black dark:text-white bg-white text-black">
       <main className="flex min-h-screen flex-col items-center justify-between p-20">
         <Image
           src="/assets/logo.png"
@@ -72,6 +72,6 @@ export default function Home() {
         </Button>
         <PrettyHeader text={pokemon.name} />
       </main>
-    </Card>
+    </div>
   );
 }
