@@ -3,7 +3,8 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>pokedex</h1>
+      <h1>Kanto Region</h1>
+      <h1>Johto Region</h1>
     </main>
   );
 }

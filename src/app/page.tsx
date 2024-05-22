@@ -70,6 +70,15 @@ export default function Home() {
         <Button color="primary" onPress={() => generateRandomNumber()}>
           Re-Roll
         </Button>
+        <Button
+          color="primary"
+          onClick={(e) => {
+            e.preventDefault();
+            window.location.href = `https://bulbapedia.bulbagarden.net/wiki/${pokemon.name}`;
+          }}
+        >
+          Learn More on Bulbapedia
+        </Button>
         {/* <PrettyHeader text={pokemon.name} /> */}
       </main>
     </div>

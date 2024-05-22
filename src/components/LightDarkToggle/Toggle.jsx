@@ -22,7 +22,7 @@ export default function Toggle() {
     <Switch
       defaultSelected={theme === "dark"}
       size="lg"
-      color="secondary"
+      color="primary"
       thumbIcon={({ isSelected, className }) =>
         isSelected ? (
           <SunIcon className={className} />
